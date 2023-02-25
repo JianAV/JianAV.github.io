@@ -1,0 +1,134 @@
+﻿/* How to import stylesheets into your current stylesheet (2nd media query way):
+
+@import "navigation.css";  For using a string 
+
+or
+
+@import url("navigation.css");   For using a url */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background: rgb(41 59 255);
+    color: rgb(255,255,255);
+}
+
+    header h1 {
+        text-align: center;
+        margin: 0px;
+        padding: 1em;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: rgb(128 128 128);
+        }
+
+#navDropdownList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding: 10px 0px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-item-dropdown {
+    float: left;
+    padding: .25em 0em .25em 1em;
+}
+
+    .nav-item-dropdown:hover .dropdown-menu {
+        display: block;
+        background-color: white;
+        color: black;
+    }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    clear: both;
+    border-radius: 6px;
+}
+
+/*Dropdown items will be displayed horizontally unless "clear:both" is applied*/
+.dropdown-item {
+    text-align: left;
+    width: 100%;
+    clear: both;
+}
+    /*Font color isn't inherited from parent class, must be applied on tag*/
+    .dropdown-item a {
+        color: black;
+    }
+
+    .dropdown-item:hover {
+        background-color: rgb(128 128 128);
+    }
+
+.column {
+    background: rgb(193 189 189);
+    border-radius: 7px;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px auto;
+}
+
+section {
+    clear: both;
+}
+
+tr:nth-child(2n) {
+    background: rgb(193 189 189);
+}
+
+/*The 3rd way to refer to a media query*/
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+
+    /*Think phone format first, then style for larger screens!
+        Of course you can do the reverse using max-width/height
+        or whatever, but it works out in this case since the
+        html article tag is innately block display.
+
+        Also, include media queries below the affected styled tags
+        as css code is read and run from top-down.
+    */
+    .column {
+        display: inline-block;
+        width: 28%;
+        float: left;
+        margin-left: 2%;
+    }
+}

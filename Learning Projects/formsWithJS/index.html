@@ -34,6 +34,12 @@
                 <input type="text" name="billZip" id="billingZip" pattern="[0-9]{5}" required /><br />
         </fieldset>
 
+        <fieldset>
+            <legend>Rate This Form</legend>
+            <label for="rating" id="ratingDisplay">Rating:</label>
+                <input type="range" name="rating" id="formRating" min=0 max=5 onchange="displayValue(this)"/>
+        </fieldset>
+
         <input type="submit" value="Verify" />
     </form>
 </body>

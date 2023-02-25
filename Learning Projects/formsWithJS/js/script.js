@@ -15,3 +15,9 @@ function billingFunction() {
         document.getElementById("billingZip").value = "";
     }
 }
+
+function displayValue(element) {
+    var value = element.value;
+    //this is hard-coded, find a way to make it flexible with any more html type range
+    document.getElementById("ratingDisplay").innerHTML = "Rating: " + value;
+}
