@@ -101,3 +101,23 @@ footer {
         margin:0px;
     }
 }
+/*can use 3 media types: print, screen, or speech*/
+@media print {
+    body{
+        background-color:transparent;
+    }
+    header, footer{
+        background-color:transparent;
+    }
+    header h1{
+        font-size:1em;
+    }
+    nav a{
+        border:none;
+        padding:0px;
+        margin:0px;
+    }
+    .myClass{
+        column-count:1;
+    }
+}
