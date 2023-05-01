@@ -1,0 +1,25 @@
+﻿header{
+    background-color:rgb(178,178,178);
+}
+
+a {
+    color: black;
+    background-color:rgb(197,197,197);
+}
+
+h1{
+    text-align:center;
+    color:white;
+}
+
+h2{
+    color:rgb(0,0,128);
+}
+
+section{
+    background-color:rgb(127,127,127);
+}
+
+img{
+    display:none;
+}
