@@ -1,17 +1,12 @@
-// JavaScript source code
+/*Name this external file gallery.js*/
 
 function upDate(previewPic) {
-    var img = previewPic.src;
-    var altText = previewPic.alt;
-    document.getElementById("image").innerHTML = altText;
-
-    //When changing style via JS, the argument must be contained in
-    //quotations and variables concatenated outside quotations as shown below!
-    document.getElementById("image").style.backgroundImage = "url(" + img + ")";
-
+    document.getElementById("image").style.backgroundImage = "url(" + previewPic.src + ")";
+    document.getElementById("image").innerHTML = previewPic.alt;
 }
 
 function unDo() {
+
+    document.getElementById("image").style.backgroundImage = "";
     document.getElementById("image").innerHTML = "Hover over an image below to display here.";
-    document.getElementById("image").style.backgroundImage = "url('')";
 }
