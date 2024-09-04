@@ -4,7 +4,6 @@
     + showcase GOOD projects, even just 1 or 3 will do
     + projects can be whatever as long as it shows skills
         ++ if you want, it can appeal to a specific field that you're trying to get into
-    + HOST ON GITHUB
 -->
 
 
@@ -22,14 +21,16 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <a href="index.html">Home</a>
         <a href="#greeting">Greeting</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a href="test.html">test</a>
 
-        <!--<button>&#9834;--><!-- music, default off, "/" overlaps) --> <!--<p>/</p></button>-->
+
+        <!-- <button>&#9834;music, default off, "/" overlaps) <p>/</p></button> -->
     </nav>
 
     <!-- Greeting -->
@@ -37,8 +38,11 @@
         <aside>
             <img src="https://www.rd.com/wp-content/uploads/2019/09/Cute-cat-lying-on-his-back-on-the-carpet.-Breed-British-mackerel-with-yellow-eyes-and-a-bushy-mustache.-Close-up-e1573490045672.jpg" alt="Profile Picture" />
         </aside>
-        <h1>Hello, I'm J</h1>
+        <p>Hello, I'm J</p>
+        <p>Window Y Pos: <span id="Ypos">Hi</span></p>
     </section>
+
+    <hr />
 
     <!-- Bio -->
     <section id="about">
@@ -50,12 +54,14 @@
         </aside>
     </section>
 
+    <hr />
+
     <!-- Skills -->
     <section id="skills">
         <h1>Current Skills</h1>
 
         <!-- %%%% Perhaps use pictures for each skill instead -->
-        <section>
+        <div>
             <h2>Web Development</h2>
             <p>html</p>
             <progress max="10" value="4"></progress>
@@ -65,16 +71,18 @@
             <progress max="10" value="2"></progress>
             <p>bootstrap</p>
             <progress max="10" value="2"></progress>
-        </section>
+        </div>
 
-        <section>
+        <div>
             <h2>Other Programming Languages</h2>
             <p>c++</p>
             <progress max="10" value="4"></progress>
             <p>java</p>
             <progress max="10" value="3"></progress>
-        </section>
+        </div>
     </section>
+
+    <hr />
 
     <!-- Contact Me -->
     <section id="contact">
